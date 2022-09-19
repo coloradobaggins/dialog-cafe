@@ -15,11 +15,15 @@ app.post('/infocafe', async(req, res)=>{
 
     let intentMap = new map();
 
+    
+
     intentMap.set('info.cafe', (agent)=>{
 
         agent.add('Hoy tenemos cafes calientes, frios y frappuccinos');
 
     });
+
+    agent.handleRequest(intentMap);
 
 });
 
