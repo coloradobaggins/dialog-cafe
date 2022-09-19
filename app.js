@@ -20,7 +20,8 @@ app.post('/infocafe', async(req, res)=>{
 
     
 
-    intentMap.set('info.cafe', async(agent)=>{
+    //intentMap.set('infocafe', async(agent)=>{
+    intentMap.set('consulta_cafe', async(agent)=>{
 
         agent.add('Hoy tenemos cafes calientes, frios y frappuccinos');
 
