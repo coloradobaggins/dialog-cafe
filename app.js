@@ -16,7 +16,7 @@ app.post('/infocafe', async(req, res)=>{
 
     const agent = new dialog.WebhookClient({request:req, response:res});
 
-    let intentMap = new map();
+    let intentMap = new Map();
 
     
 
@@ -31,5 +31,5 @@ app.post('/infocafe', async(req, res)=>{
 });
 
 app.listen(PORT, ()=>{
-    console.log(`Server listening on port 3001`);
+    console.log(`Server listening on port ${PORT}`);
 })
